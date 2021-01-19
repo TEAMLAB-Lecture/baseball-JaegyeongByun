@@ -295,7 +295,7 @@ def main():
         while True:
             while True:        # 사용자가 올바른 형식의 입력을 했을 경우 break
                 user_input = input("Input guess number : ")
-                if is_validated_number(user_input):
+                if user_input == '0' or is_validated_number(user_input):
                     break
                 print("Wrong Input, Input again")
 
