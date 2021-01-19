@@ -280,7 +280,7 @@ def is_no(one_more_input):
     if one_more_input.upper() in ['N', 'NO']:
         result = True
     else:
-        result = None
+        result = False
     # ==================================
     return result
 
