@@ -308,7 +308,7 @@ def main():
 
             if strikes == 3:   
                 while True:    # 사용자가 올바른 형식의 입력을 했을 경우 break
-                    want_more = input("You win, one more(Y/N)? ")
+                    want_more = input("You win, one more(Y/N) ?")
                     if is_yes(want_more):
                         want_more = True
                         break
