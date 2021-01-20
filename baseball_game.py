@@ -298,7 +298,7 @@ def main():
                 user_input = input("Input guess number : ")
                 if user_input == '0' or is_validated_number(user_input):
                     break
-                print("Wrong Input, Input again")
+                print(" Input again")
 
             if user_input == '0':         # 사용자가 0을 입력한 경우
                 is_break = True
@@ -316,7 +316,7 @@ def main():
                     elif is_no(want_more):
                         want_more = False
                         break
-                    print("Wrong Input, Input again")
+                    print(" Input again")
                 
                 if not want_more:      # 모두 맞추고 게임을 더이상 원하지 않는 경우
                     is_break = True
