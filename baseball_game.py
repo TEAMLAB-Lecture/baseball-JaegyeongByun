@@ -284,8 +284,8 @@ def is_no(one_more_input):
 
 def main():
     is_break = False
+    print("Play Baseball")
     while not is_break: # 사용자가 0을 입력한 경우, 모두 맞추고 게임을 더이상 원하지 않는 경우 break
-        print("Play Baseball")
         random_number = str(get_not_duplicated_three_digit_number())
         print("Random Number is : ", random_number)
 
