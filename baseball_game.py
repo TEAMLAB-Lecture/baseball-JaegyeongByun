@@ -91,15 +91,11 @@ def is_duplicated_number(three_digit):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
-    digits = []
-    for digit in three_digit:
-        digits.append(int(digit))
-    
-    if digits[0] == digits[1]:
+    if three_digit[0] == three_digit[1]:
         result = True
-    elif digits[1] == digits[2]:
+    elif three_digit[1] == three_digit[2]:
         result = True
-    elif digits[2] == digits[0]:
+    elif three_digit[2] == three_digit[0]:
         result = True
     else:
         result = False
@@ -298,7 +294,7 @@ def main():
                 user_input = input("Input guess number : ")
                 if user_input == '0' or is_validated_number(user_input):
                     break
-                print(" Input again")
+                print("Wrong Input, Input again")
 
             if user_input == '0':         # 사용자가 0을 입력한 경우
                 is_break = True
@@ -316,7 +312,7 @@ def main():
                     elif is_no(want_more):
                         want_more = False
                         break
-                    print(" Input again")
+                    print("Wrong Input, Input again")
                 
                 if not want_more:      # 모두 맞추고 게임을 더이상 원하지 않는 경우
                     is_break = True
