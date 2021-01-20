@@ -91,7 +91,6 @@ def is_duplicated_number(three_digit):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
 
-    result = False
     digits = []
     for digit in three_digit:
         digits.append(int(digit))
@@ -102,6 +101,8 @@ def is_duplicated_number(three_digit):
         result = True
     elif digits[2] == digits[0]:
         result = True
+    else:
+        result = False
     # ==================================
     return result
 
@@ -306,7 +307,7 @@ def main():
             strikes, balls = get_strikes_or_ball(user_input, random_number)
             print(f"Strikes : {strikes} , Ballse : {balls}")
 
-            if strikes == 3:   
+            if strikes == 3:
                 while True:    # 사용자가 올바른 형식의 입력을 했을 경우 break
                     want_more = input("You win, one more(Y/N) ?")
                     if is_yes(want_more):
